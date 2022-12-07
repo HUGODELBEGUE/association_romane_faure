@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 body {
@@ -13,6 +14,9 @@ body {
 }
 
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: auto;
   box-shadow: 1px 1px 2px grey;
@@ -22,8 +26,10 @@ nav {
 main {
   display: flex;
   justify-content: center;
-  max-width: 1280px;
+  flex-direction: column;
   margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1920px;
 }
 
 h1,
@@ -40,20 +46,107 @@ p {
   margin: 1rem 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /* classes génériques */
-.margin_top {
-  margin-top: 5rem;
+.margins {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .uppercase {
   font-variant-caps: all-small-caps;
 }
 
-.logo {
+.underline {
+  text-decoration: underline;
+}
+
+.display_legende {
+  display: flex;
+  align-items: center;
+}
+
+nav .img_logo {
   width: 100px;
 }
 
-.container {
+nav ul {
+  display: flex;
+  column-gap: 2rem;
+}
+
+nav li {
+  font-variant-caps: small-caps;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.25s;
+}
+
+nav li:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+nav a {
+  color: #f3f3f3;
+}
+
+main .container_logo {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+main .container_logo img {
+  width: 30rem;
+}
+
+main .container_colours {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+main .card_colors {
+  width: 200px;
+  height: auto;
+  aspect-ratio: 1/1;
+  background: brown;
+  border-radius: 10px;
+}
+
+main .display_legende ul {
+  margin-left: 1rem;
+}
+
+main .display_legende li {
+  margin: 2rem 0;
+}
+
+main .container_cards {
   display: flex;
   justify-content: center;
   gap: 4rem;
@@ -62,15 +155,19 @@ p {
   flex-wrap: wrap;
 }
 
-.container_card {
+main .card {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 400px;
+  width: 600px;
   box-shadow: 1px 1px 3px grey;
   padding: 1rem;
   background: #fff;
   border-radius: 15px;
+}
+
+main .card p {
+  text-align: justify;
 }
 
 .font_1 {
