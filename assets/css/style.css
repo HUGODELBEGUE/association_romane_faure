@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Reenie+Beanie&family=Square+Peg&family=Zeyada&display=swap");
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f3f3;
+  color: #333;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.margin_top {
+  margin-top: 5rem;
+}
+
+.uppercase {
+  font-variant-caps: all-small-caps;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.container_card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 400px;
+  box-shadow: 1px 1px 3px grey;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 30px;
+}
+
+.font_1 {
+  font-family: "Reenie Beanie", cursive;
+}
+
+.font_2 {
+  font-family: "Caveat", cursive;
+}
+
+.font_3 {
+  font-family: "Zeyada", cursive;
+}
+
+.font_4 {
+  font-family: "Square Peg", cursive;
+}
