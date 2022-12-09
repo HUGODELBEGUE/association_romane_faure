@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Reenie+Beanie&family=Square+Peg&family=Zeyada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Reenie+Beanie&family=Square+Peg&family=Zeyada&display=swap");
 
 * {
   box-sizing: border-box;
@@ -9,6 +9,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   background: #f3f3f3;
   color: #333;
 }
@@ -60,7 +61,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -84,6 +85,7 @@ a {
 .display_legende {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 nav .img_logo {
@@ -97,26 +99,26 @@ nav ul {
 
 nav li {
   font-variant-caps: small-caps;
-  font-size: 30px;
-  font-weight: bold;
-  border-radius: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  border-radius: 5px;
   padding: 10px;
-  transition: transform 0.25s;
+  transition: transform 0.35s;
+  background: #c8cde5;
 }
 
 nav li:hover {
-  opacity: 0.7;
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 nav a {
-  color: #f3f3f3;
+  color: #333;
 }
 
 main .container_logo {
   display: flex;
   justify-content: center;
-  column-gap: 2rem;
+  column-gap: 5rem;
 }
 
 main .container_logo img {
@@ -125,21 +127,24 @@ main .container_logo img {
 
 main .container_colours {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   row-gap: 2rem;
-  align-items: center;
+  margin-left: 15rem;
 }
 
 main .card_colors {
   width: 200px;
   height: auto;
   aspect-ratio: 1/1;
-  background: brown;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: 2px solid gray;
 }
 
 main .display_legende ul {
   margin-left: 1rem;
+  text-align: center;
+  max-width: 300px;
+  margin-left: 0;
 }
 
 main .display_legende li {
@@ -163,7 +168,7 @@ main .card {
   box-shadow: 1px 1px 3px grey;
   padding: 1rem;
   background: #fff;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 main .card p {
@@ -175,13 +180,37 @@ main .card p {
 }
 
 .font_2 {
-  font-family: "Caveat", cursive;
+  font-family: "Beth Ellen", cursive;
+}
+
+.font_2 h1 {
+  font-size: 24px;
+}
+
+.font_2 p {
+  font-size: 18px;
+}
+
+.font_2 h2 {
+  font-size: 13px;
 }
 
 .font_3 {
   font-family: "Zeyada", cursive;
 }
 
+.font_3 h1 {
+  font-size: 36px;
+}
+
+.font_3 p {
+  font-size: 25px;
+}
+
 .font_4 {
   font-family: "Square Peg", cursive;
+}
+
+.font_4 h1 {
+  font-size: 45px;
 }
