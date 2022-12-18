@@ -1,8 +1,18 @@
 <script setup>
+import Header from './components/Header.vue'
+import NavBar from './components/NavBar.vue'
 import HelloWorld from './components/HelloWorld.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
+  <header>
+    <Header />
+    <nav>
+      <NavBar />
+    </nav>
+  </header>
+
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -12,13 +22,15 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
 
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
+  <main>
+    <HelloWorld msg="Vite + Vue" />
+    <!-- Affichage du contenu router -->
+    <router-view></router-view>
+  </main>
 
-  <!-- Liens du router -->
-  <router-link to="/">Go to Home</router-link> |
-  <router-link to="/contact">Go to Contact</router-link>
-  <!-- Affichage du contenu du router -->
-  <router-view></router-view>
+  <footer>
+    <Footer />
+  </footer>
 </template>
 
 <style scoped>
@@ -32,5 +44,12 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgb(190, 190, 190);
 }
 </style>
