@@ -24,9 +24,11 @@ import Footer from './components/Footer.vue'
 
   <main>
     <HelloWorld msg="Vite + Vue" />
-    <!-- Affichage du contenu router -->
+    <!-- Display of router content -->
     <router-view></router-view>
   </main>
+
+  <hr>
 
   <footer>
     <Footer />
@@ -34,22 +36,30 @@ import Footer from './components/Footer.vue'
 </template>
 
 <style scoped>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid rgb(190, 190, 190);
+}
+
+hr {
+  width: 100%;
+  background: rgb(190, 190, 190);
+  border: 3px solid rgb(190, 190, 190);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid rgb(190, 190, 190);
 }
 </style>

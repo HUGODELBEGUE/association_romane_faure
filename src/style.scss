@@ -1,5 +1,9 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  // font-family: 'Square Peg', cursive;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -19,20 +23,19 @@ a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
+
+  &:hover {
+    color: #535bf2;
+  }
 }
 
-a:hover {
-  color: #535bf2;
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
+i {
+  margin-right: .5rem;
 }
 
 body {
@@ -59,16 +62,18 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+
+  &:hover {
+    border-color: #646cff;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
 }
 
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+.container {}
 
 .card {
   padding: 2em;
