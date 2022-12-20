@@ -1,6 +1,5 @@
 <script setup>
 import Header from './components/Header.vue'
-import NavBar from './components/NavBar.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import Footer from './components/Footer.vue'
 </script>
@@ -8,22 +7,21 @@ import Footer from './components/Footer.vue'
 <template>
   <header>
     <Header />
-    <nav>
-      <NavBar />
-    </nav>
   </header>
 
-  <div>
+  <hr>
+
+  <!-- <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-  </div>
+  </div> -->
 
   <main>
-    <HelloWorld msg="Vite + Vue" />
+    <!-- <HelloWorld msg="Vite + Vue" /> -->
     <!-- Display of router content -->
     <router-view></router-view>
   </main>
@@ -37,16 +35,18 @@ import Footer from './components/Footer.vue'
 
 <style scoped>
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  border-bottom: 2px solid rgb(190, 190, 190);
+  background: initial;
 }
 
 hr {
-  width: 100%;
   background: rgb(190, 190, 190);
   border: 3px solid rgb(190, 190, 190);
+  margin: 0;
+  opacity: .6;
+}
+
+footer {
+  background: #c8cde5;
 }
 
 .logo {
