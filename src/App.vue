@@ -36,6 +36,7 @@ import Footer from './components/Footer.vue'
 <style scoped>
 header {
   background: initial;
+  padding-top: 10em;
 }
 
 hr {
@@ -47,6 +48,7 @@ hr {
 
 footer {
   background: #c8cde5;
+  padding-bottom: 10em;
 }
 
 .logo {

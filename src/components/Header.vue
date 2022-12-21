@@ -19,10 +19,12 @@ import NavBar from './NavBar.vue'
     justify-content: space-between;
     align-items: flex-end;
     max-width: 1440px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .logo__container {
-    width: 2rem;
+    width: 2em;
 }
 
 .logo__container a {

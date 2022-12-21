@@ -72,7 +72,6 @@ h2 {
 img {
   width: 100%;
   height: auto;
-  /* filter: drop-shadow(0 0 2px gray); */
 }
 
 button {
@@ -103,21 +102,33 @@ span {
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 6em 2em;
   text-align: center;
 }
 
 .box {
-  width: calc(100% / 3);
   padding: 2.5em 3.5em;
   background: #f5f5dc;
   border-radius: 5px;
   box-shadow: 0 0 3px gray;
 }
 
+.box__img {
+  display: flex;
+  background: transparent;
+  border-radius: 5px;
+  box-shadow: 0 0 3px gray;
+  overflow: hidden;
+}
+
+.box__divise {
+  width: calc(100% / 3);
+}
+
 .card {
   padding: 2em;
 }
+
 
 @media (prefers-color-scheme: light) {
   :root {

@@ -1,6 +1,6 @@
 <template>
     <div class="footer__container container">
-        <div class="links__footer">
+        <div class="links__footer box__divise">
             <h3>Actualités et événements</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem iure explicabo quam!
             </p>
@@ -11,7 +11,7 @@
                 <li><a class="link__perspectiv" href=""><i class="bi bi-house-fill"></i>Perspectiv'immo</a></li>
             </ul>
         </div>
-        <div class="text__footer">
+        <div class="text__footer box__divise">
             <h3>En savoir plus..</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
@@ -21,7 +21,7 @@
                 aperiam pariatur tempore?
             </p>
         </div>
-        <div class="contact__footer">
+        <div class="contact__footer box__divise">
             <h3>Nous contacter</h3>
             <div class="link__mail"><a href="mailto:ass.romanefaure@hotmail.com"><i
                         class="bi bi-envelope-fill"></i>ass.romanefaure@hotmail.com</a></div>
@@ -39,13 +39,14 @@
 .footer__container {
     display: flex;
     text-align: left;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .links__footer,
 .text__footer,
 .contact__footer {
     padding: 2rem;
-    width: calc(100% / 3);
 }
 
 .link__facebook:hover {

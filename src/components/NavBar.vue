@@ -5,7 +5,8 @@
             <router-link to="/"><i class="bi bi-globe-europe-africa"></i>Association</router-link>
         </div>
         <div class="activity link"><a href=""><i class="bi bi-activity"></i>Activité</a></div>
-        <div class="donation link"><a href=""><i class="bi bi-balloon-heart-fill"></i>Don</a></div>
+        <div class="donation link"><a href=""><i class="bi bi-currency-exchange"></i>Don</a></div>
+        <div class="memory link"><a href=""><i class="bi bi-balloon-heart-fill"></i>Memoire</a></div>
         <div class="contact link">
             <router-link to="/contact"><i class="bi bi-envelope-fill"></i>Contact</router-link>
         </div>
@@ -15,7 +16,7 @@
 <style scoped>
 .nav__container {
     display: flex;
-    column-gap: 3rem;
+    column-gap: 3em;
     margin-bottom: .3rem;
 }
 
