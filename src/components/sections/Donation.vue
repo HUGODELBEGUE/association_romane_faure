@@ -88,7 +88,6 @@
 }
 
 .donation__text {
-    padding-bottom: 25rem;
     padding-left: 5rem;
     padding-right: 15rem;
     font-size: 35px;
@@ -125,6 +124,7 @@
     justify-content: center;
     position: relative;
     width: 100%;
+    height: 30rem;
 }
 
 .donation__interaction .box {
@@ -138,13 +138,12 @@
     overflow: hidden;
     width: 30%;
     position: absolute;
-    left: -11%;
-    bottom: -25%;
+    left: -16%;
 }
 
 .interaction__button {
     width: 50%;
     position: absolute;
-
+    bottom: -12%;
 }
 </style>
