@@ -12,7 +12,7 @@ import Button from '../items/Button.vue'
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis officiis quam nam vel
                             doloribus veritatis. Vel ea officiis, quisquam enim mollitia nulla sunt repellat cumque
                             veritatis nemo excepturi assumenda magnam.</p>
-                        <hr>
+                        <hr class="line__2">
                         <ul>
                             <li>Raison 1</li>
                             <li>Raison 2</li>
@@ -42,24 +42,9 @@ import Button from '../items/Button.vue'
                             facilis laudantium ratione harum cum ullam sapiente quam omnis, esse fuga laboriosam
                             quod quae quo veniam, rerum quisquam consequatur.</p>
                     </div>
-                    <hr>
-                    <ul>
-                        <li>
-                            <Link href="https://www.facebook.com/" color="#4267b2" src="/src/assets/facebook.png"
-                                alt="logo facebook" text="Facebook" />
-                        </li>
-                        <li>
-                            <Link href="https://www.instagram.com/" color="#e1306c" src="/src/assets/instagram.png"
-                                alt="logo intagram" text="Instagram" />
-                        </li>
-                        <li>
-                            <Link href="https://www.twitter.com/" color="#1da1f2" src="/src/assets/twitter.png"
-                                alt="logo twitter" text="Twitter" />
-                        </li>
-                        <li>
-                            <Link href="" color="" src="" alt="" text="Autres" />
-                        </li>
-                    </ul>
+                    <hr class="line__3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt laboriosam distinctio quia qui
+                        omnis dolorum vero reprehenderit labore quod voluptatum.</p>
                 </div>
             </div>
         </div>
@@ -81,6 +66,7 @@ import Button from '../items/Button.vue'
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-right: 8em;
 }
 
 .donation__box {
@@ -103,11 +89,13 @@ import Button from '../items/Button.vue'
     line-height: 3rem;
     text-align: left;
 
+    p {
+        margin-bottom: 0;
+    }
+
     hr {
-        background: $color__secondary;
-        border: 3px solid $color__secondary;
-        margin-left: 0;
-        margin-right: 80%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
     }
 
     li {
@@ -123,7 +111,7 @@ import Button from '../items/Button.vue'
 .donation__network {
     width: 20%;
     position: absolute;
-    right: -11%;
+    right: -6em;
 }
 
 .donation__network ul {
@@ -146,18 +134,18 @@ import Button from '../items/Button.vue'
     /* width: auto; */
 }
 
-.interaction__img {
-    display: flex;
-    padding: 0;
-    overflow: hidden;
-    width: 30%;
-    position: absolute;
-    left: -16%;
-}
+// .interaction__img {
+//     display: flex;
+//     padding: 0;
+//     overflow: hidden;
+//     width: 30%;
+//     position: absolute;
+//     left: -16%;
+// }
 
 .interaction__button {
     width: 50%;
     position: absolute;
-    bottom: -20%;
+    bottom: -10em;
 }
 </style>

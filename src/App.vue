@@ -9,7 +9,7 @@ import Footer from './components/Footer.vue'
     <Header />
   </header>
 
-  <hr>
+  <hr class="line__1">
 
   <!-- <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -26,7 +26,7 @@ import Footer from './components/Footer.vue'
     <router-view></router-view>
   </main>
 
-  <hr>
+  <hr class="line__1">
 
   <footer>
     <Footer />
@@ -48,12 +48,6 @@ header {
   padding-top: 10em;
 }
 
-hr {
-  background: rgb(190, 190, 190);
-  border: 3px solid rgb(190, 190, 190);
-  margin: 0;
-  opacity: .6;
-}
 
 footer {
   background: #c8cde5;

@@ -1,3 +1,7 @@
+<script setup>
+import Link from '../items/Link.vue'
+</script>
+
 <template>
     <section id="activity" class="activity">
         <div class="activity__container container width__desktop__down">
@@ -18,7 +22,7 @@
                             distinctio aut ad voluptas quidem reprehenderit, est impedit ut corporis non quia
                             mollitia
                             harum a nulla beatae?</p>
-                        <hr>
+                        <hr class="line__3">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut quisquam voluptas!
                             Reiciendis atque iure nobis nemo, aliquid quia. Hic, ad eveniet. Voluptatem fugit
                             corporis,
@@ -29,10 +33,6 @@
                             eveniet
                             deleniti suscipit.</p>
                     </div>
-                </div>
-                <div class="activity__img box box__divise">
-                    <img src="https://media.istockphoto.com/id/950605046/fr/photo/enfants-multiethniques-dans-un-cercle.jpg?s=612x612&w=0&k=20&c=tSit8ZnKfJ7joJ6AMUVYAkThiM6semAAsQUWHY_bpOc="
-                        alt="">
                 </div>
                 <div class="activity__actions box box__divise">
                     <div class="actions__icon">
@@ -47,7 +47,7 @@
                             voluptate,
                             aspernatur distinctio beatae similique sed illum ab consequatur? Deserunt accusantium
                             nostrum unde repellat in. Quas, sunt.</p>
-                        <hr>
+                        <hr class="line__3">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid dignissimos
                             sunt
                             earum suscipit cum! Sequi ea reprehenderit, eius quis consequuntur, culpa inventore ex
@@ -57,7 +57,7 @@
                             quidem
                             debitis quibusdam a. Distinctio, odio, qui saepe quas esse numquam iste aliquid laborum
                             soluta ea fugit velit animi sunt, dolorem quaerat. Quasi.</p>
-                        <hr>
+                        <hr class="line__3">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus odit,
                             eligendi culpa quidem, debitis repudiandae, optio nihil minima inventore maiores? Minus
                             accusamus eveniet nisi cum, officia delectus pariatur maiores eum ipsum! Amet incidunt
@@ -65,12 +65,49 @@
                             unde! Et molestiae facilis odio.</p>
                     </div>
                 </div>
+                <div class="activity__news box box__divise">
+                    <div class="news__icon">
+                        <img src="../../assets/confettis.png" alt="news image">
+                    </div>
+                    <div class="news__title">
+                        <h2>Actualités</h2>
+                    </div>
+                    <div class="news__text">
+                        <span>Lorem ipsum dolor sit, amet consectetur.</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus neque dolor aliquid
+                            distinctio aut ad voluptas quidem reprehenderit, est impedit ut corporis non quia
+                            mollitia
+                            harum a nulla beatae?</p>
+                        <hr class="line__3">
+                        <ul>
+                            <li>
+                                <Link href="https://www.facebook.com/" color="#4267b2" src="/src/assets/facebook.png"
+                                    alt="logo facebook" text="Facebook" />
+                            </li>
+                            <li>
+                                <Link href="https://www.instagram.com/" color="#e1306c" src="/src/assets/instagram.png"
+                                    alt="logo intagram" text="Instagram" />
+                            </li>
+                            <li>
+                                <Link href="https://www.twitter.com/" color="#1da1f2" src="/src/assets/twitter.png"
+                                    alt="logo twitter" text="Twitter" />
+                            </li>
+                            <li>
+                                <Link href="" color="" src="" alt="" text="Autres" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="activity__img box__img">
+                <img src="https://media.istockphoto.com/id/950605046/fr/photo/enfants-multiethniques-dans-un-cercle.jpg?s=612x612&w=0&k=20&c=tSit8ZnKfJ7joJ6AMUVYAkThiM6semAAsQUWHY_bpOc="
+                    alt="">
             </div>
         </div>
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* Section activity */
 .activity {
     background: #c8cde5;
@@ -90,18 +127,23 @@
     align-items: start;
     justify-content: space-between;
     column-gap: 3rem;
-    position: relative;
-}
-
-.activity__missions,
-.activity__actions {
-    /* text-align: left; */
 }
 
 .missions__icon,
-.actions__icon {
+.actions__icon,
+.news__icon {
     width: 35%;
     margin: 0 auto;
+}
+
+.news__text {
+    ul {
+        margin: 2em 0;
+        margin-left: 1em;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+    }
 }
 
 .activity__img {
@@ -109,8 +151,6 @@
     align-items: center;
     overflow: hidden;
     padding: 0;
-    position: absolute;
-    left: calc(100% /3);
-    top: -3%;
+    margin-top: 5rem;
 }
 </style>

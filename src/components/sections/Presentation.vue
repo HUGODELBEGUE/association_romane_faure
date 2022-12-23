@@ -11,7 +11,7 @@ import Button from '../items/Button.vue'
                 <div class="presentation__title">
                     <h1>Association Romane Faure</h1>
                 </div>
-                <hr>
+                <hr class="line__2">
                 <div class="presentation__text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique blanditiis, maxime
                         deserunt
@@ -52,11 +52,12 @@ import Button from '../items/Button.vue'
     width: 40%;
     margin-left: 2rem;
 
-    hr {
-        background: $color__secondary;
-        border: 3px solid $color__secondary;
-        margin-left: 0;
-        margin-right: 60%;
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        margin-top: 0;
     }
 }
 

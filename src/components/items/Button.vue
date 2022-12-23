@@ -31,14 +31,14 @@ button {
     font-family: inherit;
     cursor: pointer;
     transition: all .15s;
-    box-shadow: 5px 5px 0px transparentize($color__secondary, .45);
+    box-shadow: 5px 5px 0px transparentize($color__secondary, .55);
     font-variant-caps: all-small-caps;
 
     &:hover {
         position: relative;
-        top: 5px;
-        left: 4px;
-        box-shadow: 0px 0px 0px transparentize($color__secondary, .45);
+        top: 3px;
+        left: 2.5px;
+        box-shadow: 3px 3px 0px transparentize($color__secondary, .55);
     }
 
     &:focus,

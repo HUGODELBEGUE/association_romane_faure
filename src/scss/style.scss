@@ -66,6 +66,7 @@ h1 {
 
 h2 {
   font-size: 2.2em;
+  line-height: 1.1;
 }
 
 img {
@@ -99,7 +100,7 @@ textarea {
   &:focus,
   &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
-    background-color: #c2c2c2;
+    background-color: transparentize($color__secondary, .8);
   }
 }
 
@@ -126,17 +127,20 @@ span {
 }
 
 .box {
-  padding: 2.5em 3.5em;
+  padding: 4.5em 3.5em;
   background: $color__background;
   border-radius: 2px;
-  box-shadow: 0 0 3px gray;
+  box-shadow: 0 3px 20px $color__shadow;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
 }
 
 .box__img {
   display: flex;
   background: transparent;
   border-radius: 2px;
-  box-shadow: 0 0 3px gray;
+  box-shadow: 0 0 3px $color__shadow;
   overflow: hidden;
 }
 
@@ -148,6 +152,30 @@ span {
   padding: 2em;
 }
 
+.line__1 {
+  background: rgb(190, 190, 190);
+  border: 3px solid rgb(190, 190, 190);
+  margin: 0;
+  opacity: .6;
+}
+
+.line__2 {
+  background: $color__secondary;
+  border: 3px solid $color__secondary;
+  border-radius: 2px;
+  margin-left: 0;
+  margin-right: 60%;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+.line__3 {
+  background: $color__typography;
+  border: 1px solid $color__typography;
+  opacity: .2;
+  border-radius: 2px;
+  margin: 0;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
