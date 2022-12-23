@@ -33,9 +33,18 @@ import Footer from './components/Footer.vue'
   </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+header,
+main :deep(.presentation),
+main :deep(.contact) {
+  background-image: url(https://img.freepik.com/premium-vector/painted-background-multicoloured-palette_23-2148427592.jpg?w=2000);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 header {
-  background: initial;
+  /* background: initial; */
   padding-top: 10em;
 }
 
@@ -48,7 +57,8 @@ hr {
 
 footer {
   background: #c8cde5;
-  padding-bottom: 10em;
+  padding-top: 3em;
+  padding-bottom: 7em;
 }
 
 .logo {

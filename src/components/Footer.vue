@@ -1,5 +1,5 @@
 <template>
-    <div class="footer__container container">
+    <div class="footer__container container width__desktop__down">
         <div class="links__footer box__divise">
             <h3>Actualités et événements</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem iure explicabo quam!

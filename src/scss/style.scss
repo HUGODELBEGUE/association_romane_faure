@@ -20,7 +20,7 @@
   -webkit-text-size-adjust: 100%;
 }
 
-* {
+* img {
   outline: none !important;
   box-sizing: border-box;
 }
@@ -36,17 +36,16 @@ body {
   place-items: start;
   min-width: 320px;
   min-height: 100vh;
-  background: #f5f5dc;
 }
 
 a {
   font-weight: 500;
-  color: #333;
+  color: $color__typography;
   text-decoration: inherit;
   transition: color .15s;
 
   &:hover {
-    color: #333;
+    color: $color__typography;
     opacity: .8;
   }
 }
@@ -75,48 +74,68 @@ img {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  background-color: $color__tertiary;
+}
+
+label {
+  margin-right: 1rem;
+  font-variant-caps: all-small-caps;
+}
+
+input,
+textarea {
+  border-radius: 3px;
+  border: 1px solid $color__secondary;
   padding: 0.6em 1.2em;
-  font-size: 2.2em;
+  font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #bd4032;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  background-color: #f3f3f3;
 
   &:hover {
-    border-color: #646cff;
+    border-color: $color__secondary;
   }
 
   &:focus,
   &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+    background-color: #c2c2c2;
   }
+}
+
+#submit__button {
+  padding: 1em;
 }
 
 span {
   color: rgb(177, 177, 177);
 }
 
-.container {
+.width__desktop__up {
+  max-width: 1440px;
+}
+
+.width__desktop__down {
   max-width: 1280px;
+}
+
+.container {
   margin: 0 auto;
-  padding: 6em 2em;
+  padding: 15em 2em;
   text-align: center;
 }
 
 .box {
   padding: 2.5em 3.5em;
-  background: #f5f5dc;
-  border-radius: 5px;
+  background: $color__background;
+  border-radius: 2px;
   box-shadow: 0 0 3px gray;
 }
 
 .box__img {
   display: flex;
   background: transparent;
-  border-radius: 5px;
+  border-radius: 2px;
   box-shadow: 0 0 3px gray;
   overflow: hidden;
 }
@@ -133,16 +152,16 @@ span {
 @media (prefers-color-scheme: light) {
   :root {
     // color: #213547;
-    color: #333;
-    background-color: #ffffff;
+    color: $color__typography;
+    background-color: $color__background;
   }
 
   a:hover {
-    color: #333;
+    color: $color__typography;
     opacity: .8;
   }
 
   button {
-    background-color: #e28d29;
+    background-color: $color__secondary;
   }
 }

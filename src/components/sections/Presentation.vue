@@ -1,6 +1,9 @@
+<script setup>
+import Button from '../items/Button.vue'
+</script>
 <template>
     <section class="presentation">
-        <div class="presentation__container container">
+        <div class="presentation__container container width__desktop__down">
             <div class="presentation__img">
                 <img src="../../assets/logo.svg" alt="logo association romane faure">
             </div>
@@ -8,6 +11,7 @@
                 <div class="presentation__title">
                     <h1>Association Romane Faure</h1>
                 </div>
+                <hr>
                 <div class="presentation__text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique blanditiis, maxime
                         deserunt
@@ -15,18 +19,17 @@
                         quibusdam ut
                         sint id optio.</p>
                 </div>
+                <Button text="Don maintenant" font_size="1.5" />
             </div>
         </div>
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '../../scss/variables';
+
 /* Section presentation */
 .presentation {
-    background-image: url(https://img.freepik.com/premium-vector/painted-background-multicoloured-palette_23-2148427592.jpg?w=2000);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     min-height: 70vh;
     display: flex;
     align-items: center;
@@ -45,18 +48,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
     width: 40%;
     margin-left: 2rem;
-}
 
-.presentation__title,
-.presentation__text {
-    text-align: left;
-}
-
-.presentation__title h1 {
-    margin-top: 1rem;
-    margin-bottom: .5rem;
+    hr {
+        background: $color__secondary;
+        border: 3px solid $color__secondary;
+        margin-left: 0;
+        margin-right: 60%;
+    }
 }
 
 .presentation__text p {

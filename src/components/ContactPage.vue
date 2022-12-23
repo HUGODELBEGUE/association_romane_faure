@@ -1,11 +1,11 @@
 <script setup>
-import Form from './sections/Form.vue'
+import Contact from './sections/Contact.vue'
 import Memory from './sections/Memory.vue'
 </script>
 
 <template>
     <div class="contact__container">
-        <Form />
+        <Contact />
         <Memory />
     </div>
 </template>

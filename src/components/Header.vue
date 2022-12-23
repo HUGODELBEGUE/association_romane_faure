@@ -3,7 +3,7 @@ import NavBar from './NavBar.vue'
 </script>
 
 <template>
-    <div class="header__container container">
+    <div class="header__container container width__desktop__up">
         <div class="logo__container">
             <a href="/"><img class="logo" src="../assets/moon_icon.png" alt="logo romane faure" /></a>
         </div>
@@ -18,7 +18,6 @@ import NavBar from './NavBar.vue'
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    max-width: 1440px;
     padding-top: 0;
     padding-bottom: 0;
 }

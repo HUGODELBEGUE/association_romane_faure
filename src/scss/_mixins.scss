@@ -1,0 +1,4 @@
+@mixin transparent($color) {
+    color: $color;
+    opacity: .5;
+}

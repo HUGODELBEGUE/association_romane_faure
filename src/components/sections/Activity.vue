@@ -1,6 +1,6 @@
 <template>
-    <section class="activity">
-        <div class="activity__container container">
+    <section id="activity" class="activity">
+        <div class="activity__container container width__desktop__down">
             <div class="activity__text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptas.</p>
             </div>
@@ -76,8 +76,12 @@
     background: #c8cde5;
 }
 
+.activity__container {
+    padding-top: calc(15em - 6em);
+}
+
 .activity__text {
-    padding-bottom: 4rem;
+    padding-bottom: 10rem;
     font-size: 35px;
 }
 
@@ -106,8 +110,7 @@
     overflow: hidden;
     padding: 0;
     position: absolute;
-    width: 38%;
-    left: 31%;
-    top: 3%;
+    left: calc(100% /3);
+    top: -3%;
 }
 </style>
