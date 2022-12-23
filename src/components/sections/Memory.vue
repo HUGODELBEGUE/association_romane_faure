@@ -28,7 +28,8 @@
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+/* Section memory */
 .memory__container {
     display: flex;
 }

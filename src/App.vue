@@ -34,23 +34,25 @@ import Footer from './components/Footer.vue'
 </template>
 
 <style lang="scss" scoped>
+@import './scss/variables';
+
 header,
 main :deep(.presentation),
 main :deep(.contact) {
-  background-image: url(https://img.freepik.com/premium-vector/painted-background-multicoloured-palette_23-2148427592.jpg?w=2000);
+  background-image: url(https://www.legalplace.fr/wp-content/uploads/2018/08/gestion-association-2300.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
 header {
-  /* background: initial; */
-  padding-top: 10em;
+  min-height: 10vh;
+  // padding-top: 10em;
 }
 
 
 footer {
-  background: #c8cde5;
+  background: $color__background;
   padding-top: 3em;
   padding-bottom: 7em;
 }

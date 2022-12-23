@@ -53,16 +53,10 @@ import Link from '../items/Link.vue'
                             earum suscipit cum! Sequi ea reprehenderit, eius quis consequuntur, culpa inventore ex
                             animi
                             ducimus soluta eveniet voluptatem assumenda nisi iusto nulla numquam tempore unde
-                            voluptatibus provident? Cum, ut nesciunt? Soluta illum porro nam sapiente repellat
-                            quidem
-                            debitis quibusdam a. Distinctio, odio, qui saepe quas esse numquam iste aliquid laborum
-                            soluta ea fugit velit animi sunt, dolorem quaerat. Quasi.</p>
+                            voluptatibus provident</p>
                         <hr class="line__3">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus odit,
-                            eligendi culpa quidem, debitis repudiandae, optio nihil minima inventore maiores? Minus
-                            accusamus eveniet nisi cum, officia delectus pariatur maiores eum ipsum! Amet incidunt
-                            omnis
-                            unde! Et molestiae facilis odio.</p>
+                            eligendi culpa quidem, debitis repudiandae, optio nihil minima inventore maiores?</p>
                     </div>
                 </div>
                 <div class="activity__news box box__divise">
@@ -93,7 +87,8 @@ import Link from '../items/Link.vue'
                                     alt="logo twitter" text="Twitter" />
                             </li>
                             <li>
-                                <Link href="" color="" src="" alt="" text="Autres" />
+                                <Link href="https://www.perspectiv-immo.net/" color="#bd4032" src="/src/assets/home.png"
+                                    alt="logo perspectiv-immo" text="Perspectiv'immo" />
                             </li>
                         </ul>
                     </div>
@@ -108,9 +103,11 @@ import Link from '../items/Link.vue'
 </template>
 
 <style lang="scss" scoped>
+@import '../../scss/variables';
+
 /* Section activity */
 .activity {
-    background: #c8cde5;
+    background: $color__background;
 }
 
 .activity__container {
@@ -118,15 +115,19 @@ import Link from '../items/Link.vue'
 }
 
 .activity__text {
-    padding-bottom: 10rem;
+    padding-bottom: 3em;
     font-size: 35px;
 }
 
 .activity__box {
     display: flex;
-    align-items: start;
     justify-content: space-between;
     column-gap: 3rem;
+
+    h2 {
+        margin-top: .5em;
+        margin-bottom: 0;
+    }
 }
 
 .missions__icon,
@@ -151,6 +152,6 @@ import Link from '../items/Link.vue'
     align-items: center;
     overflow: hidden;
     padding: 0;
-    margin-top: 5rem;
+    margin-top: -1rem;
 }
 </style>

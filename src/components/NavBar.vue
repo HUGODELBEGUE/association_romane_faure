@@ -13,7 +13,9 @@
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '../scss/variables';
+
 .nav__container {
     display: flex;
     column-gap: 3em;
@@ -21,6 +23,6 @@
 }
 
 a:hover {
-    color: #e28d29;
+    color: $color__button;
 }
 </style>

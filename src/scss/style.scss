@@ -40,12 +40,12 @@ body {
 
 a {
   font-weight: 500;
-  color: $color__typography;
+  color: $color__typography__dark;
   text-decoration: inherit;
   transition: color .15s;
 
   &:hover {
-    color: $color__typography;
+    color: $color__typography__dark;
     opacity: .8;
   }
 }
@@ -60,12 +60,12 @@ i {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 5.2em;
   line-height: 1.1;
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 3.2em;
   line-height: 1.1;
 }
 
@@ -75,7 +75,7 @@ img {
 }
 
 button {
-  background-color: $color__tertiary;
+  background-color: $color__valid;
 }
 
 label {
@@ -86,7 +86,7 @@ label {
 input,
 textarea {
   border-radius: 3px;
-  border: 1px solid $color__secondary;
+  border: 1px solid $color__button;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -94,13 +94,13 @@ textarea {
   background-color: #f3f3f3;
 
   &:hover {
-    border-color: $color__secondary;
+    border-color: $color__button;
   }
 
   &:focus,
   &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
-    background-color: transparentize($color__secondary, .8);
+    background-color: transparentize($color__button, .8);
   }
 }
 
@@ -109,7 +109,7 @@ textarea {
 }
 
 span {
-  color: rgb(177, 177, 177);
+  color: $color__info;
 }
 
 .width__desktop__up {
@@ -121,14 +121,15 @@ span {
 }
 
 .container {
-  margin: 0 auto;
+  margin: auto;
   padding: 15em 2em;
   text-align: center;
 }
 
 .box {
+  z-index: 1;
   padding: 4.5em 3.5em;
-  background: $color__background;
+  background: $color__background__box;
   border-radius: 2px;
   box-shadow: 0 3px 20px $color__shadow;
   display: flex;
@@ -153,15 +154,15 @@ span {
 }
 
 .line__1 {
-  background: rgb(190, 190, 190);
-  border: 3px solid rgb(190, 190, 190);
+  background: $color__strip;
+  border: 3px solid $color__strip;
   margin: 0;
   opacity: .6;
 }
 
 .line__2 {
-  background: $color__secondary;
-  border: 3px solid $color__secondary;
+  background: $color__button;
+  border: 3px solid $color__button;
   border-radius: 2px;
   margin-left: 0;
   margin-right: 60%;
@@ -170,8 +171,8 @@ span {
 }
 
 .line__3 {
-  background: $color__typography;
-  border: 1px solid $color__typography;
+  background: $color__typography__dark;
+  border: 1px solid $color__typography__dark;
   opacity: .2;
   border-radius: 2px;
   margin: 0;
@@ -180,16 +181,16 @@ span {
 @media (prefers-color-scheme: light) {
   :root {
     // color: #213547;
-    color: $color__typography;
-    background-color: $color__background;
+    color: $color__typography__dark;
+    background-color: $color__background__box;
   }
 
   a:hover {
-    color: $color__typography;
+    color: $color__typography__dark;
     opacity: .8;
   }
 
   button {
-    background-color: $color__secondary;
+    background-color: $color__button;
   }
 }

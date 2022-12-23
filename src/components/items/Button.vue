@@ -27,18 +27,19 @@ button {
     border-radius: 5px;
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
-    font-weight: 500;
+    font-weight: 600;
     font-family: inherit;
     cursor: pointer;
     transition: all .15s;
-    box-shadow: 5px 5px 0px transparentize($color__secondary, .55);
+    box-shadow: 5px 5px 0px transparentize($color__button, .55);
     font-variant-caps: all-small-caps;
 
     &:hover {
         position: relative;
         top: 3px;
         left: 2.5px;
-        box-shadow: 3px 3px 0px transparentize($color__secondary, .55);
+        filter: brightness(.9);
+        box-shadow: 3px 3px 0px transparentize($color__button, .55);
     }
 
     &:focus,
@@ -47,7 +48,8 @@ button {
         position: relative;
         top: 5px;
         left: 4px;
-        box-shadow: 0px 0px 0px transparentize($color__secondary, .45);
+        background: $color__valid;
+        box-shadow: 0px 0px 10px 5px transparentize($color__valid, .45);
     }
 }
 </style>

@@ -32,6 +32,8 @@ import Link from '../items/Link.vue'
                     <Link href="https://www.facebook.com/" src="/src/assets/facebook.png" alt="logo facebook" />
                     <Link href="https://www.instagram.com/" src="/src/assets/instagram.png" alt="logo instagram" />
                     <Link href="https://www.twitter.com/" src="/src/assets/twitter.png" alt="logo twitter" />
+                    <Link href="https://www.perspectiv-immo.net/" src="/src/assets/home.png"
+                        alt="logo perspectiv-immo" />
                 </div>
             </div>
         </div>
@@ -40,10 +42,12 @@ import Link from '../items/Link.vue'
 
 <style lang="scss" scoped>
 @import '../../scss/variables';
+/* Section contact */
 
 .contact {
     display: flex;
-    background: $color__primary;
+    background: $color__background;
+    min-height: 90vh;
 }
 
 .contact__container {
@@ -58,6 +62,7 @@ import Link from '../items/Link.vue'
 
 .form__description {
     h1 {
+        font-size: 2.2em;
         margin-top: 0;
     }
 
@@ -76,6 +81,8 @@ import Link from '../items/Link.vue'
 }
 
 .description__text {
+    color: $color__typography__light;
+
     h2 {
         margin: 0;
     }

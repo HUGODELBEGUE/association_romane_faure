@@ -14,17 +14,13 @@ import Button from '../items/Button.vue'
                             veritatis nemo excepturi assumenda magnam.</p>
                         <hr class="line__2">
                         <ul>
-                            <li>Raison 1</li>
-                            <li>Raison 2</li>
-                            <li>Raison 3</li>
-                            <li>Raison 4</li>
+                            <li>Etape 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, error.</li>
+                            <li>Etape 2 Lorem ipsum dolor sit amet.</li>
+                            <li>Etape 3 Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                            <li>Etape 4 Lorem, ipsum dolor.</li>
                         </ul>
                     </div>
                     <div class="donation__interaction">
-                        <!-- <div class="interaction__img box">
-                            <img src="https://media.istockphoto.com/id/839295596/fr/photo/six-amis-pr%C3%A9-ado-ferroutage-dans-un-parc-bouchent-portrait.jpg?s=612x612&w=0&k=20&c=Dbxf02Ne6yvb_G9yJ6WAbMShDSQ5RdbwltDvaqPO1zM="
-                                alt="photo enfants">
-                        </div> -->
                         <div class="interaction__button box">
                             <span>Lorem ipsum dolor sit amet consectetur!</span>
                             <div class="button__text">
@@ -35,9 +31,10 @@ import Button from '../items/Button.vue'
                         </div>
                     </div>
                 </div>
-                <div class="donation__network box">
-                    <div class="network__links">
+                <div class="donation__annexe box">
+                    <div class="annexe__text">
                         <h2>Pourquoi faire un don ?</h2>
+                        <span>Lorem ipsum, dolor sit amet consectetur.</span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates iusto optio
                             facilis laudantium ratione harum cum ullam sapiente quam omnis, esse fuga laboriosam
                             quod quae quo veniam, rerum quisquam consequatur.</p>
@@ -56,7 +53,7 @@ import Button from '../items/Button.vue'
 
 /* Section donation */
 .donation {
-    background-image: url(https://2323153.fs1.hubspotusercontent-na1.net/hubfs/2323153/factsheet/assets/Differents_types_dassociations.jpg);
+    background-image: url(https://cap.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcap.2F2019.2F01.2F10.2F20ce34e6-1fc1-4a29-9329-178a1c917574.2Ejpeg/1200x630/background-color/ffffff/quality/70/cr/wqkgR2V0dHkgLyBDQVBJVEFM/creation-dune-association-choisir-le-bon-statut-1322815.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -103,21 +100,24 @@ import Button from '../items/Button.vue'
 
         &::before {
             content: url(../../assets/hourglass-split.svg);
-            margin: 0 1em;
+            margin-left: .5em;
+            margin-right: 1em;
         }
     }
 }
 
-.donation__network {
+.donation__annexe {
     width: 20%;
+    padding-top: 1em;
+    padding-bottom: 1em;
     position: absolute;
     right: -6em;
 }
 
-.donation__network ul {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2.1rem;
+.annexe__text {
+    h2 {
+        font-size: 2.2em;
+    }
 }
 
 .donation__interaction {
@@ -128,20 +128,6 @@ import Button from '../items/Button.vue'
     width: 100%;
     height: 20rem;
 }
-
-.donation__interaction .box {
-    /* height: min-content; */
-    /* width: auto; */
-}
-
-// .interaction__img {
-//     display: flex;
-//     padding: 0;
-//     overflow: hidden;
-//     width: 30%;
-//     position: absolute;
-//     left: -16%;
-// }
 
 .interaction__button {
     width: 50%;

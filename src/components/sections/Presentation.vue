@@ -30,7 +30,7 @@ import Button from '../items/Button.vue'
 
 /* Section presentation */
 .presentation {
-    min-height: 70vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
 }
@@ -51,6 +51,7 @@ import Button from '../items/Button.vue'
     text-align: left;
     width: 40%;
     margin-left: 2rem;
+    color: $color__typography__light;
 
     h1 {
         margin: 0;

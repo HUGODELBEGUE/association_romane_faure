@@ -18,8 +18,9 @@ import NavBar from './NavBar.vue'
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 0;
+    padding-top: calc(10vh - 2.8vh);
     padding-bottom: 0;
+    height: 100%;
 }
 
 .logo__container {
@@ -39,5 +40,6 @@ import NavBar from './NavBar.vue'
 
 .logo:hover {
     /* filter: drop-shadow(0 0 2px gray); */
+    filter: brightness(120%);
 }
 </style>
