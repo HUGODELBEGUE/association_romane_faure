@@ -1,6 +1,5 @@
 <script setup>
-import Link from '../items/Link.vue'
-import Button from '../items/Button.vue'
+
 </script>
 
 <template>

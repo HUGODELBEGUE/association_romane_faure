@@ -1,7 +1,6 @@
 <script setup>
 import Contact from './sections/Contact.vue'
 import Memory from './sections/Memory.vue'
-import Strip from './items/Strip.vue'
 </script>
 
 <template>

@@ -1,5 +1,4 @@
 <script setup>
-import Button from '../items/Button.vue'
 </script>
 <template>
     <section class="presentation">

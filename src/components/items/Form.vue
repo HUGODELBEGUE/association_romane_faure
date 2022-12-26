@@ -95,6 +95,7 @@
     font-weight: 800;
     width: 50%;
     margin-left: 2em;
+    border-radius: 5px;
 
     &:hover {
         filter: brightness(.92);

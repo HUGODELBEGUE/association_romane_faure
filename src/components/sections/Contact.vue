@@ -1,6 +1,5 @@
 <script setup>
 import Form from '../items/Form.vue'
-import Link from '../items/Link.vue'
 </script>
 
 <template>

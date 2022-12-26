@@ -1,5 +1,4 @@
 <script setup>
-import Link from './items/Link.vue'
 </script>
 
 <template>

@@ -21,6 +21,17 @@ import NavBar from './NavBar.vue'
     padding-top: calc(10vh - 2.8vh);
     padding-bottom: 0;
     height: 100%;
+
+}
+
+.nav__fixed {
+    position: fixed;
+    z-index: 2;
+    background: aquamarine;
+    padding-top: 0;
+    border-radius: 30px;
+    align-items: center;
+    column-gap: 3rem;
 }
 
 .logo__container {
