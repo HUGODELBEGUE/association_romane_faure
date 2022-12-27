@@ -6,7 +6,7 @@ import Memory from './sections/Memory.vue'
 <template>
     <div class="contact__container">
         <Contact />
-        <Strip />
+        <hr class="line__1">
         <Memory />
     </div>
 </template>

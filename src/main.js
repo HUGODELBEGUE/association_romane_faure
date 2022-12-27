@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import './scss/style.scss'
 import HomePage from './components/HomePage.vue'
 import ContactPage from './components/ContactPage.vue'
+import Logo from './components/items/Logo.vue'
 import Button from './components/items/Button.vue'
 import Link from './components/items/Link.vue'
 import Strip from './components/items/Strip.vue'
@@ -14,11 +15,12 @@ const router = createRouter({
     routes: [
         { path: '/', name: 'HomePage', component: HomePage },
         { path: '/contact', name: 'ContactPage', component: ContactPage },
-        { path: '/:pathMatch(.*)', name: 'ContactPage', component: HomePage }
+        { path: '/:pathMatch(.*)', redirect: '/' }
     ]
 })
 
 createApp(App)
+    .component('Logo', Logo)
     .component('Button', Button)
     .component('Link', Link)
     .component('Strip', Strip)

@@ -12,12 +12,15 @@
                             doloribus veritatis. Vel ea officiis, quisquam enim mollitia nulla sunt repellat cumque
                             veritatis nemo excepturi assumenda magnam.</p>
                         <hr class="line__2">
-                        <ul>
-                            <li>Etape 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, error.</li>
-                            <li>Etape 2 Lorem ipsum dolor sit amet.</li>
-                            <li>Etape 3 Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                            <li>Etape 4 Lorem, ipsum dolor.</li>
-                        </ul>
+                        <span>Vous voulez faire un don, suivez les instructions:</span>
+                        <ol>
+                            <li>Appuyer sur le bouton orange en dessous "Faire un don".</li>
+                            <li>Sur la page officielle de la trésorerie de l'association Romane Faure, entrez vos
+                                coordonnées.
+                            </li>
+                            <li>Ensuite rentrez vos coordonnées banquaires (site sécurisé bla bla bla !!)</li>
+                            <li>Cliquez sur valider ! Et voilà vous avez sauvé une vie !!!! </li>
+                        </ol>
                     </div>
                     <div class="donation__interaction">
                         <div class="interaction__button box">
@@ -96,12 +99,6 @@
 
     li {
         font-size: 25px;
-
-        &::before {
-            content: url(../../assets/hourglass-split.svg);
-            margin-left: .5em;
-            margin-right: 1em;
-        }
     }
 }
 

@@ -3,9 +3,6 @@
 <template>
     <section class="presentation">
         <div class="presentation__container container width__desktop__down">
-            <div class="presentation__img">
-                <img src="../../assets/logo.svg" alt="logo association romane faure">
-            </div>
             <div class="presentation__description">
                 <div class="presentation__title">
                     <h1>Association Romane Faure</h1>
@@ -39,15 +36,11 @@
     justify-content: center;
 }
 
-.presentation__img {
-    width: 60%;
-}
-
 .presentation__description {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     width: 40%;
     margin-left: 2rem;
     color: $color__typography__light;
@@ -59,6 +52,11 @@
     p {
         margin-top: 0;
     }
+}
+
+.line__2 {
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .presentation__text p {

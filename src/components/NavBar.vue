@@ -16,8 +16,9 @@
 <script>
 export default {
     data() {
-
-        console.log(this.$route)
+        this.$router.afterEach((to, from) => {
+            console.log(to, from)
+        })
     }
 }
 

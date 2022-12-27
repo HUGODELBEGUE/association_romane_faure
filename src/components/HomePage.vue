@@ -9,7 +9,7 @@ import Donation from './sections/Donation.vue'
         <Presentation />
         <Strip />
         <Activity />
-        <Strip />
+        <hr class="line__1">
         <Donation />
     </div>
 </template>

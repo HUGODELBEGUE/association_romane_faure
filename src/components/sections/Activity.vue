@@ -58,39 +58,53 @@
                             eligendi culpa quidem, debitis repudiandae, optio nihil minima inventore maiores?</p>
                     </div>
                 </div>
-                <div class="activity__news box box__divise">
-                    <div class="news__icon">
-                        <img src="../../assets/confettis.png" alt="news image">
-                    </div>
-                    <div class="news__title">
-                        <h2>Actualités</h2>
-                    </div>
-                    <div class="news__text">
-                        <span>Lorem ipsum dolor sit, amet consectetur.</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus neque dolor aliquid
-                            distinctio aut ad voluptas quidem reprehenderit, est impedit ut corporis non quia
-                            mollitia
-                            harum a nulla beatae?</p>
-                        <hr class="line__3">
-                        <ul>
-                            <li>
-                                <Link href="https://www.facebook.com/" color="#4267b2" src="/src/assets/facebook.png"
-                                    alt="logo facebook" text="Facebook" />
-                            </li>
-                            <li>
-                                <Link href="https://www.instagram.com/" color="#e1306c" src="/src/assets/instagram.png"
-                                    alt="logo intagram" text="Instagram" />
-                            </li>
-                            <li>
-                                <Link href="https://www.twitter.com/" color="#1da1f2" src="/src/assets/twitter.png"
-                                    alt="logo twitter" text="Twitter" />
-                            </li>
-                            <li>
-                                <Link href="https://www.perspectiv-immo.net/" color="#bd4032" src="/src/assets/home.png"
-                                    alt="logo perspectiv-immo" text="Perspectiv'immo" />
-                            </li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="activity__news box">
+                <div class="news__title">
+                    <h2>Actualités</h2>
+                </div>
+                <div class="news__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facilis error totam animi veniam.
+                        Temporibus laboriosam modi incidunt nemo. Explicabo!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus neque dolor aliquid
+                        distinctio aut ad voluptas quidem reprehenderit, est impedit ut corporis non quia
+                        mollitia
+                        harum a nulla beatae?</p>
+                    <hr class="line__3">
+                    <ul>
+                        <li class="news__link box__img">
+                            <span>Lorem ipsum dolor sit, amet.</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, quod? Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit. Dolorem, voluptas!</p>
+                            <Link href="https://www.facebook.com/" color="#4267b2" src="/src/assets/facebook.png"
+                                alt="logo facebook" text="Facebook" />
+                        </li>
+                        <li class="news__link box__img">
+                            <span>Lorem ipsum amet consectetur.</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel voluptas eaque
+                                necessitatibus, beatae ex, commodi blanditiis facilis dolor ea explicabo minus nihil,
+                                reiciendis quo.</p>
+                            <Link href="https://www.instagram.com/" color="#e1306c" src="/src/assets/instagram.png"
+                                alt="logo intagram" text="Instagram" />
+                        </li>
+                        <li class="news__link box__img">
+                            <span>Lorem ipsum dolor sit, consectetur.</span>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, tenetur! Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Labore deleniti reprehenderit laudantium
+                                non quod ratione.</p>
+                            <Link href="https://www.twitter.com/" color="#1da1f2" src="/src/assets/twitter.png"
+                                alt="logo twitter" text="Twitter" />
+                        </li>
+                        <li class="news__link box__img">
+                            <span>Lorem ipsum dolor sit, amet consectetur.</span>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus voluptates alias
+                                laborum error libero. Libero voluptate odit quia consectetur veritatis blanditiis fugit
+                                eveniet, molestias laboriosam. Rem necessitatibus nemo molestiae aut voluptatibus
+                                explicabo molestias, nisi consequatur!</p>
+                            <Link href="https://www.perspectiv-immo.net/" color="#bd4032" src="/src/assets/home.png"
+                                alt="logo perspectiv-immo" text="Perspectiv'immo" />
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="activity__img box__img">
@@ -120,7 +134,7 @@
 
 .activity__box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     column-gap: 3rem;
 
     h2 {
@@ -130,20 +144,36 @@
 }
 
 .missions__icon,
-.actions__icon,
-.news__icon {
+.actions__icon {
     width: 35%;
     margin: 0 auto;
 }
 
+.activity__news {
+    width: 80%;
+    margin: 3rem auto;
+    row-gap: 0;
+}
+
 .news__text {
     ul {
-        margin: 2em 0;
-        margin-left: 1em;
         display: flex;
-        flex-direction: column;
-        row-gap: 1em;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 4em 0;
+        gap: 4em;
     }
+}
+
+.news__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    text-align: right;
+    border: 3px solid rgba(51, 51, 51, 0.2);
+    border-radius: 4px;
+    padding: 1.5em;
 }
 
 .activity__img {
@@ -151,6 +181,5 @@
     align-items: center;
     overflow: hidden;
     padding: 0;
-    margin-top: -1rem;
 }
 </style>

@@ -1,25 +1,69 @@
 <template>
-    <form class="form" action="">
+    <form class="form" method="post">
         <div class="form__input name">
             <label for="name">Votre nom</label>
-            <input type="text" name="name" id="name" placeholder="Ecrivez votre nom ici..">
+            <input v-model="formData.name" type="text" name="name" id="name" placeholder="Ecrivez votre nom ici..">
         </div>
         <div class="form__input email">
             <label for="email">Votre email</label>
-            <input type="email" name="email" id="email" placeholder="Ecrivez votre email ici..">
+            <input v-model="formData.email" type="email" name="email" id="email"
+                placeholder="Ecrivez votre email ici..">
         </div>
         <div class="form__input message">
             <label for="message">Votre message</label>
-            <textarea name="message" id="message" cols="30" rows="20"
+            <textarea v-model="formData.message" name="message" id="message" cols="30" rows="20"
                 placeholder="Ecrivez votre demande ici.."></textarea>
         </div>
         <div class="form__input submit">
-            <input id="submit__button" type="submit" value="Envoyer">
+            <input @click="sendContact()" id="submit__button" type="submit" value="Envoyer">
         </div>
+        <span>{{ formData.name + " " + formData.email + " " + formData.message }}</span>
+        <span v-for="error in errors">{{ error }}</span>
     </form>
 </template>
 
-<script setup>
+<script>
+export default {
+    data() {
+        return {
+            errors: [],
+            formData: {
+                name: '',
+                email: '',
+                message: ''
+            }
+        }
+    },
+    methods: {
+        sendContact: function (e) {
+            alert('1')
+            this.errors = [];
+            alert('2')
+            if (!this.formData.name) {
+                this.errors.push('Not name!!')
+                alert('3')
+            }
+            if (!this.formData.email) {
+                this.errors.push('Not email!!')
+                alert('4')
+            }
+            if (!this.formData.message) {
+                this.errors.push('Not message!!')
+                alert('5')
+            }
+            alert('6')
+            // if (this.errors) {
+            //     return false;
+            // }
+            alert('7')
+            console.log(this.formData)
+            alert('8')
+            e.preventDefault();
+            alert('9')
+        }
+    }
+}
+
 
 //     function sendData() {
 //         var XHR = new XMLHttpRequest();
