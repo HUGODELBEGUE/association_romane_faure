@@ -3,7 +3,7 @@ import Form from '../items/Form.vue'
 </script>
 
 <template>
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="contact__container container width__desktop__down">
             <div class="contact__form box">
                 <div class="form__description">
@@ -16,13 +16,14 @@ import Form from '../items/Form.vue'
             </div>
             <div class="contact__description">
                 <div class="description__text">
-                    <h2>Pourquoi et comment nous contacter?</h2>
+                    <h2>Pourquoi nous contacter ?</h2>
                     <hr class="line__2">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae tempora voluptatum in at
-                        incidunt
-                        porro perferendis excepturi consequuntur nobis rem deserunt provident cupiditate, doloribus
-                        quos
-                        sunt. Debitis mollitia cupiditate unde.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit libero totam similique
+                        molestias magnam doloremque dolores nobis aperiam consequuntur excepturi!</p>
+                    <h3>Comment nous contacter ?</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, doloribus! Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Perspiciatis, ab?
+                    </p>
                 </div>
                 <div class="description__img box__img">
                     <img src="https://thumbs.dreamstime.com/z/map-world-painted-hands-11992809.jpg" alt="">

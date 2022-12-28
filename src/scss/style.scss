@@ -5,9 +5,9 @@
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   // font-family: 'Square Peg', cursive;
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: 400;
+  font-size: $size__typography__global;
+  line-height: $line__height__global;
+  font-weight: $font__weight;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -20,9 +20,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
-* img {
-  outline: none !important;
-  box-sizing: border-box;
+* {
+  img {
+    outline: none !important;
+    box-sizing: border-box;
+  }
 }
 
 #app {
@@ -60,12 +62,12 @@ i {
 }
 
 h1 {
-  font-size: 5.2em;
+  font-size: $size__h1__global;
   line-height: 1.1;
 }
 
 h2 {
-  font-size: 3.2em;
+  font-size: $size__h2__global;
   line-height: 1.1;
 }
 
@@ -81,6 +83,10 @@ button {
 label {
   margin-right: 1rem;
   font-variant-caps: all-small-caps;
+}
+
+span {
+  color: $color__info;
 }
 
 input,
@@ -108,10 +114,6 @@ textarea {
   padding: 1em;
 }
 
-span {
-  color: $color__info;
-}
-
 .width__desktop__up {
   max-width: 1440px;
 }
@@ -122,13 +124,13 @@ span {
 
 .container {
   margin: auto;
-  padding: 15em 2em;
+  padding: 8em 2em;
   text-align: center;
 }
 
 .box {
   z-index: 1;
-  padding: 4.5em 3.5em;
+  padding: 3.5em;
   background: $color__background__box;
   border-radius: 2px;
   box-shadow: 0 3px 20px $color__shadow;
@@ -140,6 +142,8 @@ span {
 .box__img {
   display: flex;
   background: transparent;
+  width: 100%;
+  height: auto;
   border-radius: 2px;
   box-shadow: 0 0 3px $color__shadow;
   overflow: hidden;
@@ -151,6 +155,15 @@ span {
 
 .card {
   padding: 2em;
+}
+
+.important__text {
+  font-size: 2.1em;
+  line-height: 1.4em;
+
+  p {
+    margin: 0;
+  }
 }
 
 .line__1 {

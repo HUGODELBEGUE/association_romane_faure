@@ -1,14 +1,14 @@
 <script setup>
 </script>
 <template>
-    <section class="presentation">
+    <section id="presentation" class="presentation">
         <div class="presentation__container container width__desktop__down">
             <div class="presentation__description">
                 <div class="presentation__title">
                     <h1>Association Romane Faure</h1>
                 </div>
                 <hr class="line__2">
-                <div class="presentation__text">
+                <div class="presentation__text important__text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique blanditiis, maxime
                         deserunt
                         nobis amet eius nostrum nesciunt est totam iure sapiente explicabo esse fugit nihil
@@ -59,8 +59,9 @@
     margin-right: 20%;
 }
 
-.presentation__text p {
-    font-size: 35px;
-    line-height: 1.5em;
+.presentation__text {
+    p {
+        margin-bottom: 1.5em;
+    }
 }
 </style>

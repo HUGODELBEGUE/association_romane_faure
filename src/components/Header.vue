@@ -3,7 +3,7 @@ import NavBar from './NavBar.vue'
 </script>
 
 <template>
-    <div class="header__container container width__desktop__up">
+    <div id="menu" class="header__container container width__desktop__up">
         <div class="logo__container">
             <Logo />
         </div>

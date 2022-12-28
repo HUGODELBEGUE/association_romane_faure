@@ -1,5 +1,5 @@
 <template>
-    <form class="form" method="post">
+    <form @submit.prevent="sendContact()" class="form" method="post">
         <div class="form__input name">
             <label for="name">Votre nom</label>
             <input v-model="formData.name" type="text" name="name" id="name" placeholder="Ecrivez votre nom ici..">
@@ -15,7 +15,8 @@
                 placeholder="Ecrivez votre demande ici.."></textarea>
         </div>
         <div class="form__input submit">
-            <input @click="sendContact()" id="submit__button" type="submit" value="Envoyer">
+            <Button font_size="1.2" text="Envoyer" />
+            <!-- <input @click="sendContact()" id="submit__button" type="submit" value="Envoyer"> -->
         </div>
         <span>{{ formData.name + " " + formData.email + " " + formData.message }}</span>
         <span v-for="error in errors">{{ error }}</span>
@@ -35,7 +36,7 @@ export default {
         }
     },
     methods: {
-        sendContact: function (e) {
+        sendContact: function () {
             alert('1')
             this.errors = [];
             alert('2')
@@ -58,8 +59,10 @@ export default {
             alert('7')
             console.log(this.formData)
             alert('8')
-            e.preventDefault();
-            alert('9')
+            this.formData.name = '';
+            this.formData.email = '';
+            this.formData.message = '';
+            this.errors = [];
         }
     }
 }
@@ -112,6 +115,11 @@ export default {
     grid-auto-rows: minmax(100px, auto);
 }
 
+.form__input {
+    display: flex;
+    flex-direction: column;
+}
+
 .name {
     grid-column: 1;
     grid-row: 1;
@@ -131,23 +139,6 @@ export default {
     margin: auto 0;
     grid-column: 1;
     grid-row: 3;
-}
-
-#submit__button {
-    background: $color__button;
-    transition: filter .25s;
-    font-weight: 800;
-    width: 50%;
     margin-left: 2em;
-    border-radius: 5px;
-
-    &:hover {
-        filter: brightness(.92);
-    }
-}
-
-.form__input {
-    display: flex;
-    flex-direction: column;
 }
 </style>

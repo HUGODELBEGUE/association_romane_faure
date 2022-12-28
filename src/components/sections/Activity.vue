@@ -4,7 +4,7 @@
 <template>
     <section id="activity" class="activity">
         <div class="activity__container container width__desktop__down">
-            <div class="activity__text">
+            <div class="activity__text important__text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptas.</p>
             </div>
             <div class="activity__box">
@@ -124,12 +124,11 @@
 }
 
 .activity__container {
-    padding-top: calc(15em - 6em);
+    // padding-top: calc(15em - 6em);
 }
 
 .activity__text {
     padding-bottom: 3em;
-    font-size: 35px;
 }
 
 .activity__box {
@@ -174,6 +173,7 @@
     border: 3px solid rgba(51, 51, 51, 0.2);
     border-radius: 4px;
     padding: 1.5em;
+    box-shadow: 0 0 0;
 }
 
 .activity__img {

@@ -7,7 +7,7 @@
         <div class="donation__container container width__desktop__down">
             <div class="donation__box box">
                 <div class="donation__description">
-                    <div class="donation__text">
+                    <div class="donation__text important__text">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis officiis quam nam vel
                             doloribus veritatis. Vel ea officiis, quisquam enim mollitia nulla sunt repellat cumque
                             veritatis nemo excepturi assumenda magnam.</p>
@@ -29,7 +29,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sit quod voluptatibus
                                     laudantium vel iusto unde placeat quam obcaecati dolores?</p>
                             </div>
-                            <Button text="Faire un don" font_size="2" />
+                            <Button text="Faire un don" font_size="1.5" />
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 8em;
+    padding-right: 12em;
 }
 
 .donation__box {
@@ -82,10 +82,7 @@
 }
 
 .donation__text {
-    padding-left: 1em;
     padding-right: 14rem;
-    font-size: 35px;
-    line-height: 3rem;
     text-align: left;
 
     p {
@@ -97,8 +94,12 @@
         margin-bottom: 1.5em;
     }
 
-    li {
+    span {
         font-size: 25px;
+    }
+
+    ol {
+        font-size: 20px;
     }
 }
 
@@ -107,12 +108,12 @@
     padding-top: 1em;
     padding-bottom: 1em;
     position: absolute;
-    right: -6em;
+    right: -10em;
 }
 
 .annexe__text {
     h2 {
-        font-size: 2.2em;
+        font-size: 1.7em;
     }
 }
 
