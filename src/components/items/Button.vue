@@ -7,7 +7,7 @@
 <script setup>
 defineProps({
     text: String,
-    font_size: Number
+    font_size: String
 })
 </script>
 
@@ -24,7 +24,8 @@ button {
     left: 0;
     margin: 0 auto;
     width: 50%;
-    border-radius: 5px;
+    // border-radius: 5px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
     font-weight: 600;

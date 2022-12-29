@@ -1,7 +1,3 @@
-<script setup>
-import NavBar from './NavBar.vue'
-</script>
-
 <template>
     <div id="menu" class="header__container container width__desktop__up">
         <div class="logo__container">
@@ -13,6 +9,10 @@ import NavBar from './NavBar.vue'
     </div>
 </template>
 
+<script setup>
+import NavBar from './NavBar.vue'
+</script>
+    
 <style scoped>
 .header__container {
     display: flex;

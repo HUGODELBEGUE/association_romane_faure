@@ -35,7 +35,9 @@
 
 a {
     padding: .5em;
-    border-radius: 5px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
 
     &:hover {
         color: $color__button;
@@ -43,7 +45,9 @@ a {
 }
 
 a.router-link-active {
-    color: $color__button;
-    background: gray;
+    color: lighten($color__button, 18%);
+    text-decoration: none;
+    text-shadow: -1px -1px 0 darken($color__button, 9.5%);
+    transition: all 250ms linear;
 }
 </style>
