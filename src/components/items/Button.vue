@@ -24,6 +24,7 @@ button {
     left: 0;
     margin: 0 auto;
     width: 50%;
+    min-width: min-content;
     // border-radius: 5px;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     border: 1px solid transparent;

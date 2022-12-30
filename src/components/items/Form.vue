@@ -1,111 +1,101 @@
 <template>
-    <form @submit.prevent="sendContact()" class="form" method="post">
+    <form @submit.prevent="sendEmail()" ref="form" class="form" method="post">
         <div class="form__input name">
-            <label for="name">Votre nom</label>
+            <label for="name">Nom</label>
             <input v-model="formData.name" type="text" name="name" id="name" placeholder="Ecrivez votre nom ici..">
         </div>
         <div class="form__input email">
-            <label for="email">Votre email</label>
+            <label for="email">Email</label>
             <input v-model="formData.email" type="email" name="email" id="email"
                 placeholder="Ecrivez votre email ici..">
         </div>
         <div class="form__input message">
-            <label for="message">Votre message</label>
+            <label for="message">Message</label>
             <textarea v-model="formData.message" name="message" id="message" cols="30" rows="20"
                 placeholder="Ecrivez votre demande ici.."></textarea>
         </div>
         <div class="form__input submit">
             <Button font_size="1.2" text="Envoyer" />
-            <!-- <input @click="sendContact()" id="submit__button" type="submit" value="Envoyer"> -->
         </div>
-        <span>{{ formData.name + " " + formData.email + " " + formData.message }}</span>
-        <span v-for="error in errors">{{ error }}</span>
+        <div class="form__input error">
+            <div v-if="errors.length" class="error__text">
+                <p v-for="error in errors">{{ error }}&nbsp;manquant.</p>
+            </div>
+        </div>
     </form>
 </template>
 
 <script>
+import emailjs from '@emailjs/browser'
 export default {
     data() {
         return {
-            errors: [],
             formData: {
-                name: '',
-                email: '',
-                message: ''
-            }
+                name: null,
+                email: null,
+                message: null
+            },
+            errors: []
         }
     },
     methods: {
-        sendContact: function () {
-            alert('1')
+        // Send form
+        sendEmail: function () {
+            const serviceId = 'service_kj8g0gs';
+            const templateId = 'template_uywc7uk';
+            const publicKey = 'qH3WgmDhYRov4CSQq';
             this.errors = [];
-            alert('2')
             if (!this.formData.name) {
-                this.errors.push('Not name!!')
-                alert('3')
+                this.errors.push('Nom')
+                alert('Entrer votre nom!!')
             }
             if (!this.formData.email) {
-                this.errors.push('Not email!!')
-                alert('4')
+                this.errors.push('Email')
+                alert('Entrer votre emai!!')
             }
             if (!this.formData.message) {
-                this.errors.push('Not message!!')
-                alert('5')
+                this.errors.push('Message')
+                alert('Aucun message!!')
             }
-            alert('6')
-            // if (this.errors) {
-            //     return false;
-            // }
-            alert('7')
+            if (this.errors.length == 0) {
+                alert('Erreurs OK')
+                // emailjs.sendForm(serviceId, templateId, this.$refs.form, publicKey)
+                //     .then((res) => {
+                //         console.log('Success.', res.text);
+                //     })
+                //     .catch((err) => {
+                //         console.error('Erreur lors de l\'envoi.', err.text)
+                //     })
+                alert('envoi OK')
+                this.formData.name = '';
+                this.formData.email = '';
+                this.formData.message = '';
+                this.errors = [];
+                alert('Reset OK')
+            }
+            console.log(this.errors)
             console.log(this.formData)
-            alert('8')
-            this.formData.name = '';
-            this.formData.email = '';
-            this.formData.message = '';
-            this.errors = [];
+            // this.$refs.form.reset();
         }
+
+
     }
 }
-
-
-//     function sendData() {
-//         var XHR = new XMLHttpRequest();
-
-//         // Liez l'objet FormData et l'élément form
-//         var FD = new FormData(form);
-
-//         // Définissez ce qui se passe si la soumission s'est opérée avec succès
-//         XHR.addEventListener("load", function (event) {
-//             alert(event.target.responseText);
-//         });
-
-//         // Definissez ce qui se passe en cas d'erreur
-//         XHR.addEventListener("error", function (event) {
-//             alert('Oups! Quelque chose s\'est mal passé.');
-//         });
-
-//         // Configurez la requête
-//         XHR.open("POST", "https://example.com/cors.php");
-
-//         // Les données envoyées sont ce que l'utilisateur a mis dans le formulaire
-//         XHR.send(FD);
-//     }
-
-//     // Accédez à l'élément form …
-//     var form = document.getElementById("myForm");
-
-//     // … et prenez en charge l'événement submit.
-//     form.addEventListener("submit", function (event) {
-//         event.preventDefault();
-
-//         sendData();
-//     });
-// });
-
 </script>
 
 <style lang="scss" scoped>
 @import '../../scss/variables';
+
+.error__text {
+    // background: hotpink;
+    color: $color__valid;
+    margin: auto;
+    margin-left: 0;
+
+    p {
+        margin: auto;
+    }
+}
 
 .form {
     display: grid;
@@ -140,5 +130,12 @@ export default {
     grid-column: 1;
     grid-row: 3;
     margin-left: 2em;
+}
+
+.error {
+    height: 2em;
+    margin: auto 0;
+    grid-column: 2;
+    grid-row: 3;
 }
 </style>

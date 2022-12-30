@@ -65,10 +65,6 @@ import Form from '../items/Form.vue'
         font-size: 2.2em;
         margin-top: 0;
     }
-
-    p {
-        margin-bottom: 3em;
-    }
 }
 
 .contact__description {

@@ -74,7 +74,7 @@ export default {
 .mapDiv {
   position: fixed;
   right: 0;
-  top: 10vh;
+  top: 5vh;
   z-index: 3;
 }
 
