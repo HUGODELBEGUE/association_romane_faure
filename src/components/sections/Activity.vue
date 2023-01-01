@@ -72,38 +72,25 @@
                         harum a nulla beatae?</p>
                     <hr class="line__3">
                     <ul>
-                        <li class="news__link box__img">
-                            <span>Lorem ipsum dolor sit, amet.</span>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, quod? Lorem ipsum dolor
-                                sit amet consectetur adipisicing elit. Dolorem, voluptas!</p>
-                            <Link href="https://www.facebook.com/" color="#4267b2" src="/src/assets/facebook.png"
-                                alt="logo facebook" text="Facebook" />
-                        </li>
-                        <li class="news__link box__img">
-                            <span>Lorem ipsum amet consectetur.</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel voluptas eaque
-                                necessitatibus, beatae ex, commodi blanditiis facilis dolor ea explicabo minus nihil,
-                                reiciendis quo.</p>
-                            <Link href="https://www.instagram.com/" color="#e1306c" src="/src/assets/instagram.png"
-                                alt="logo intagram" text="Instagram" />
-                        </li>
-                        <li class="news__link box__img">
-                            <span>Lorem ipsum dolor sit, consectetur.</span>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, tenetur! Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Labore deleniti reprehenderit laudantium
-                                non quod ratione.</p>
-                            <Link href="https://www.twitter.com/" color="#1da1f2" src="/src/assets/twitter.png"
-                                alt="logo twitter" text="Twitter" />
-                        </li>
-                        <li class="news__link box__img">
-                            <span>Lorem ipsum dolor sit, amet consectetur.</span>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus voluptates alias
-                                laborum error libero. Libero voluptate odit quia consectetur veritatis blanditiis fugit
-                                eveniet, molestias laboriosam. Rem necessitatibus nemo molestiae aut voluptatibus
-                                explicabo molestias, nisi consequatur!</p>
-                            <Link href="https://www.perspectiv-immo.net/" color="#bd4032" src="/src/assets/home.png"
-                                alt="logo perspectiv-immo" text="Perspectiv'immo" />
-                        </li>
+                        <LinkBlock href="https://www.facebook.com/" text__title="Actualité facebook" text__description="sam modi incidunt nemo. Explicabo!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus neque dolor aliquid
+                        distinctio aut ad voluptas quidem reprehenderit, est impedit ut corporis non qu"
+                            color="#4267b2" src="/src/assets/facebook.png" alt="logo facebook" text__logo="Facebook" />
+                        <LinkBlock href="https://www.instagram.com/" text__title="Actualité instagram"
+                            text__description="di incidunt nemo. Explicabo!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit." color="#e1306c"
+                            src="/src/assets/instagram.png" alt="logo intagram" text__logo="Instagram" />
+                        <LinkBlock href="https://www.twitter.com/" text__title="Actualité twitter" text__description="ipsum dolor sit amet consectetur adipisicing elit. Quo facilis error totam animi veniam.
+                        Temporibus laboriosam modi incidunt nemo. Explicabo!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus neque dolor aliquid
+                        distinctio aut ad vo" color="#1da1f2" src="/src/assets/twitter.png" alt="logo twitter"
+                            text__logo="Twitter" />
+                        <LinkBlock href="https://www.perspectiv-immo.net/" text__title="Site perspectiv'immo"
+                            text__description="psum dolor sit amet consectetur, adipisicing elit. Totam natus neque dolor aliquid
+                        distinctio aut ad voluptas quidem reprehenderit, est impedit ut corporis non quia
+                        mollitia
+                        harum a nulla beatae?" color="#bd4032" src="/src/assets/home.png" alt="logo perspectiv-immo"
+                            text__logo="Perspectiv'immo" />
                     </ul>
                 </div>
             </div>
@@ -160,20 +147,8 @@
         justify-content: center;
         flex-wrap: wrap;
         margin: 4em 0;
-        gap: 4em;
+        gap: 2em;
     }
-}
-
-.news__link {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 35%;
-    text-align: right;
-    border: 3px solid rgba(51, 51, 51, 0.2);
-    border-radius: 4px;
-    padding: 1.5em;
-    box-shadow: 0 0 0;
 }
 
 .activity__img {

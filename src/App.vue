@@ -48,21 +48,17 @@ export default {
     }
   },
   methods: {
-    scrollSize: function () {
+    // Scrolling event
+    scrollAnimation: function () {
       if (window.scrollY > this.$refs.anchor.offsetTop) {
         this.sizeY = true;
-        console.log('true')
       } else {
         this.sizeY = false;
-        hiddenMap();
       }
       return this.sizeY;
     },
     showMap: function () {
-      document.addEventListener('scroll', this.scrollSize)
-    },
-    hiddenMap: function () {
-      document.removeEventListener('scroll', this.scrollSize)
+      document.addEventListener('scroll', this.scrollAnimation)
     }
   }
 }

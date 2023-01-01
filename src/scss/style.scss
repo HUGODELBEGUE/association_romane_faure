@@ -98,6 +98,7 @@ textarea {
   font-weight: 500;
   font-family: inherit;
   background-color: #f3f3f3;
+  transition: background .25s;
 
   &:hover {
     border-color: $color__button;
@@ -107,6 +108,7 @@ textarea {
   &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
     background-color: transparentize($color__button, .8);
+
   }
 }
 

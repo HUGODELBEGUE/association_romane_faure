@@ -23,7 +23,7 @@ defineProps({
         transition: transform .25s;
 
         &:hover {
-            transform: scale(.95);
+            transform: scale(.9);
         }
     }
 

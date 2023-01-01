@@ -4,9 +4,6 @@
         <div class="home link">
             <router-link to="/">Association</router-link>
         </div>
-        <!-- <div class="activity link"><a href="/#activity"><i class="bi bi-activity"></i>Activité</a></div>
-        <div class="donation link"><a href="/#donation"><i class="bi bi-currency-exchange"></i>Don</a></div>
-        <div class="memory link"><a href="#memory"><i class="bi bi-balloon-heart-fill"></i>Memoire</a></div> -->
         <div class="contact link">
             <router-link to="/contact">Contact</router-link>
         </div>
@@ -14,14 +11,6 @@
 </template>
 
 <script>
-// export default {
-//     data() {
-//         this.$router.afterEach((to, from) => {
-//             console.log(to, from)
-//         })
-//     }
-// }
-
 </script>
 
 <style lang="scss" scoped>
@@ -45,7 +34,7 @@ a {
 }
 
 a.router-link-active {
-    color: lighten($color__button, 18%);
+    color: $color__button;
     text-decoration: none;
     text-shadow: -1px -1px 0 darken($color__button, 9.5%);
     transition: all 250ms linear;
